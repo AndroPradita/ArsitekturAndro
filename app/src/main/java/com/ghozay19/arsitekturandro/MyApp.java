@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.ghozay19.arsitekturandro.data.DataManager;
 import com.ghozay19.arsitekturandro.di.component.ApplicationComponent;
+import com.ghozay19.arsitekturandro.di.component.DaggerApplicationComponent;
 import com.ghozay19.arsitekturandro.di.module.ApplicationModule;
 
 import javax.inject.Inject;
