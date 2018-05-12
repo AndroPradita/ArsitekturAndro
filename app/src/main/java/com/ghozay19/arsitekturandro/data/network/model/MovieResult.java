@@ -1,4 +1,4 @@
-package com.ghozay19.arsitekturandro.network.model;
+package com.ghozay19.arsitekturandro.data.network.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

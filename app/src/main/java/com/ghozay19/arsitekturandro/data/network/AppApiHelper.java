@@ -1,10 +1,13 @@
-package com.ghozay19.arsitekturandro.network;
+package com.ghozay19.arsitekturandro.data.network;
 
 
+import com.ghozay19.arsitekturandro.data.network.model.MovieResponse;
 import com.rx2androidnetworking.Rx2AndroidNetworking;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+
+import io.reactivex.Observable;
 
 @Singleton
 public class AppApiHelper implements ApiHelper {

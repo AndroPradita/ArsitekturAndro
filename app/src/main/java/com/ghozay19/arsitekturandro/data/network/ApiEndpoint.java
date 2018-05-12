@@ -1,4 +1,4 @@
-package com.ghozay19.arsitekturandro.network;
+package com.ghozay19.arsitekturandro.data.network;
 
 import android.net.Uri;
 

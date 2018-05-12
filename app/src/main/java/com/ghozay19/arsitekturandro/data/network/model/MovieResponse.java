@@ -1,4 +1,4 @@
-package com.ghozay19.arsitekturandro.network.model;
+package com.ghozay19.arsitekturandro.data.network.model;
 
 import com.google.gson.annotations.SerializedName;
 
