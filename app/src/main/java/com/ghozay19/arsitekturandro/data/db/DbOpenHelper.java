@@ -2,6 +2,7 @@ package com.ghozay19.arsitekturandro.data.db;
 
 import android.content.Context;
 
+import com.ghozay19.arsitekturandro.data.db.model.DaoMaster;
 import com.ghozay19.arsitekturandro.di.ApplicationContext;
 import com.ghozay19.arsitekturandro.di.DatabaseInfo;
 

@@ -1,7 +1,7 @@
 package com.ghozay19.arsitekturandro.data;
 
+
 import android.content.Context;
-import android.database.Observable;
 
 import com.ghozay19.arsitekturandro.data.db.DbHelper;
 import com.ghozay19.arsitekturandro.data.db.model.Movie;
@@ -14,6 +14,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+
+import io.reactivex.Observable;
 
 @Singleton
 public class AppDataManager implements DataManager {
@@ -60,5 +62,4 @@ public class AppDataManager implements DataManager {
     public Observable<MovieResponse> getTopRatedMovies(int page) {
         return mApiHelper.getTopRatedMovies(page);
     }
-
 }

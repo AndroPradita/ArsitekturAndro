@@ -3,7 +3,8 @@ package com.ghozay19.arsitekturandro.data.db;
 import com.ghozay19.arsitekturandro.data.db.model.Movie;
 
 import java.util.List;
-import java.util.Observable;
+
+import io.reactivex.Observable;
 
 public interface DbHelper {
     Observable<Long> insertMovie(Movie movie);
