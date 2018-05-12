@@ -4,10 +4,14 @@ import android.app.Application;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
+import com.ghozay19.arsitekturandro.data.db.AppDbHelper;
+import com.ghozay19.arsitekturandro.data.db.DbHelper;
 import com.ghozay19.arsitekturandro.di.ApplicationContext;
 import com.ghozay19.arsitekturandro.di.DatabaseInfo;
 import com.ghozay19.arsitekturandro.di.Preferenceinfo;
 import com.ghozay19.arsitekturandro.utils.AppConstants;
+
+import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
@@ -38,4 +42,10 @@ public class ApplicationModule {
     @Provides
     @Preferenceinfo
     String providePrefName(){return AppConstants.PREF_NAME;}
+
+    @Provides
+    @Singleton
+    DbHelper provideDbHelper(AppDbHelper appDbHelper) {
+        return appDbHelper;
+    }
 }
